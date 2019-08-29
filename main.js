@@ -6,6 +6,8 @@ var template = require('./lib/template.js');
 var path = require('path');
 var sanitizeHtml = require('sanitize-html');
 
+const port = process.env.PORT || 8000;
+
 var app = http.createServer(function(request,response){
     var _url = request.url;
     var queryData = url.parse(_url, true).query;
@@ -140,4 +142,6 @@ var app = http.createServer(function(request,response){
       response.end('Not found');
     }
 });
-app.listen(3000);
+app.listen(port, () => {
+  console.log("app is working on port " + port);
+});
