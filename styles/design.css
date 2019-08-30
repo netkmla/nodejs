@@ -1,0 +1,229 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+/* Common */
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, a, button, select {
+  margin: 0;
+  padding: 0;
+  font-weight: normal
+}
+/* table,tr,td,th{
+  border: 1px black solid;
+  border-collapse:collapse;
+  padding:10px;
+} */
+
+body, input, textarea, select, button {
+  font-family: Avenir, 'Lato', "나눔바른고딕", NanumBarunGothic, "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", dotum, AppleGothic, sans-serif;
+  font-size: 15px;
+  -webkit-text-size-adjust: none
+}
+
+body {
+  position: relative
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none
+}
+
+em, address {
+  font-style: normal
+}
+
+a {
+  text-decoration: none
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: underline
+}
+
+textarea {
+  resize: none
+}
+
+.blind {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0
+}
+
+html, body {
+  height: 100%
+}
+
+a {
+  font-size: 20px
+}
+
+/* layout */
+#wrap {
+  position: relative;
+  height: auto;
+  min-height: 100%
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto
+}
+
+#footer {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  position: absolute;
+  bottom: 0
+}
+
+#header .main_lnb {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: rgba(142, 137, 255, 1);
+  border-bottom: 1px solid #d6d6d6;
+  z-index: 1000
+}
+
+.main_lnb .header_sec {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  font-family: Avenir, 'Lato', "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", "나눔바른고딕", NanumBarunGothic, "나눔고딕", NanumGothic, "맑은 고딕", "Malgun Gothic", "돋움", dotum, AppleGothic, sans-serif
+}
+
+.main_lnb .header_sec .inner_sec {
+  position: relative;
+  max-width: 1180px;
+  height: 66px;
+  margin: 0;
+}
+.wrap{
+  text-align: center
+}
+.main_lnb .header_sec .lnb {
+  overflow: hidden;
+  margin-left: 34%;
+}
+
+
+.main_lnb .header_sec .lnb li {
+  float: left;
+  font-size: 16px;
+  text-align: left;
+  margin: 24px
+}
+
+.main_lnb .header_sec .lnb li:last-child {
+  margin-right: 0
+}
+td a:hover{
+  font-size: 17px;
+}
+td a{
+    transition: all 0.3s ease
+}
+.main_lnb .header_sec .lnb li a {
+  display: block;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  transition: all 0.3s ease
+
+}
+
+.main_lnb .header_sec .lnb li a:hover {
+  color: #000
+}
+.main_lnb .header_sec .lnb li a:hover {
+  border-bottom: 2px solid #32cda0
+}
+.main_lnb .header_sec .lnb li a:hover {
+  font-size: 23px;
+}
+
+  .main_lnb .header_sec .lnb li.on a {
+    color: #000;
+    border-bottom: 2px solid #32cda0
+  }
+
+/* #header .main_lnb{position:fixed;top:0;width:100%;background-color:#fff;border-bottom:1px solid #d6d6d6;z-index:1000}
+.main_lnb .header_sec{position:relative;overflow:hidden;width:100%;max-width:1180px;margin:0 auto;font-family:Avenir,'Lato',"애플 SD 산돌고딕 Neo","Apple SD Gothic Neo","나눔바른고딕",NanumBarunGothic,"나눔고딕",NanumGothic,"맑은 고딕","Malgun Gothic","돋움",dotum,AppleGothic,sans-serif}
+.main_lnb .header_sec h1{position:absolute;left:0;top:20px}
+.main_lnb .header_sec .inner_sec{position:relative;max-width:1180px;height:66px;margin:0 40px}
+.main_lnb .header_sec .lnb .lnb_top_logo{display:block;width:120px;height:27px;background:url(../img/app/d2_logo.gif) 0 0 no-repeat;background-size:120px 27px}
+.main_lnb .header_sec .lnb{overflow:hidden;margin-left:170px}
+.main_lnb .header_sec .lnb li{float:left;font-size:16px;text-align:left;margin:24px 30px 0 0}
+.main_lnb .header_sec .lnb li:last-child{margin-right:0}
+.main_lnb .header_sec .lnb li a{display:block;color:#a0a0a0;text-decoration:none;transition:all 0.3s ease}
+.main_lnb .header_sec .lnb li a:hover{color:#000}
+.main_lnb .header_sec .lnb li.on a{color:#000;border-bottom:2px solid #32cda0} */
+@media screen and (max-width:700px) {
+  .main_lnb .header_sec .lnb {
+    overflow: hidden;
+    margin-left: 20%
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main_lnb .header_sec .lnb {
+    overflow: hidden;
+    margin-left: 7%
+  }
+
+  a {
+    font-size: 15px;
+  }
+}
+table.type04 {
+    
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    margin : 20px 10px;
+    border-collapse: collapse;
+}
+table.type04 th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type04 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}

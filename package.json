@@ -1,26 +1,23 @@
 {
-  "name": "web2-nodejs",
+  "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/web-n/Nodejs.git"
+    "url": "git+https://github.com/netkmla/nodejs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/web-n/Nodejs/issues"
+    "url": "https://github.com/netkmla/nodejs/issues"
   },
-  "homepage": "https://github.com/web-n/Nodejs#readme",
+  "homepage": "https://github.com/netkmla/nodejs#readme",
   "dependencies": {
-    "sanitize-html": "^1.18.2"
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
   }
 }

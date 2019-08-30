@@ -1,0 +1,27 @@
+h1 {
+  color: #474747;
+  font-size: 60px;
+}
+
+p.one {
+  line-height: 10px;
+}
+
+p.two {
+  line-height: 20px;
+}
+
+.margin-center {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.general-link {
+  font-size: 15px;
+  color: #000000;
+}
+
+body {
+  background: rgba(121, 171, 255, 0.3);
+
+}
